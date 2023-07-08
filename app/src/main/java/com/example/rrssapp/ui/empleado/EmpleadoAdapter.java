@@ -1,7 +1,9 @@
 package com.example.rrssapp.ui.empleado;
 
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -9,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.rrssapp.Entities.Empleado;
 import com.example.rrssapp.OnItemClickListener;
 import com.example.rrssapp.R;
-import com.example.rrssapp.databinding.EmpleadoItemBinding;
 import com.example.rrssapp.Entities.Empleado;
 import com.example.rrssapp.OnItemClickListener;
 import com.example.rrssapp.R;
@@ -43,6 +44,13 @@ public class EmpleadoAdapter extends RecyclerView.Adapter<EmpleadoAdapter.ViewHo
         holder.binding.tvDNI.setText(empleado.getDni());
         if(empleado.getSexo().equals("Femenino")){
             holder.binding.iconoEmpleado.setImageResource(R.drawable.empleada);
+        }else{
+            holder.binding.iconoEmpleado.setImageResource(R.drawable.empleado);
+        }
+        if (empleado.getEstado().equals("Inactivo")){
+            holder.binding.cardLayout.setBackgroundColor(Color.rgb(90,90,90));
+        }else{
+            holder.binding.cardLayout.setBackgroundColor(Color.rgb(2,114,234));
         }
         holder.setOnClickListener(empleado,itemClick);
     }
@@ -63,9 +71,14 @@ public class EmpleadoAdapter extends RecyclerView.Adapter<EmpleadoAdapter.ViewHo
             binding = itemView;
         }
         public void setOnClickListener(Empleado empleado, OnItemClickListener<Empleado> itemClick){
-            binding.imgDelete.setOnClickListener(v ->{
-
+            binding.imgVer.setOnClickListener(v ->{
+                itemClick.onItemClick(empleado,"delete");
             });
+
+            binding.cardEmpleado.setOnClickListener(v ->{
+                itemClick.onItemClick(empleado,"card");
+            });
+
         }
     }
 }

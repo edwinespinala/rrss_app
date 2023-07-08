@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_empleado"
         android:name="com.example.rrssapp.ui.empleado.EmpleadoFragment"
         android:label="@string/menu_empleados"
         tools:layout="@layout/fragment_empleado" />
@@ -20,6 +20,6 @@
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.rrssapp.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/planilla"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>

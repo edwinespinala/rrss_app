@@ -38,9 +38,18 @@ public abstract class RHDataBase extends RoomDatabase {
                                 dao.deleteAll();
 
                                 //Creacion de datos por defecto en mi base de datos
-                                dao.insert(new Empleado("0411200017821","Fernando Adalberto Zúniga Herrera",1,"Masculino",20000.00,"Activo"));
-                                dao.insert(new Empleado("0411199802365","Miriam Elizabeth Miraflores Castro",1,"Femenino",20000.00,"Activo"));
-
+                                dao.insert(new Empleado("0412578555","Elmer Johel Mejia Leiva",1,1,"Masculino",20000,"Activo"));
+                                dao.insert(new Empleado("0412574765","Danny Josue Mejia Leiva",1,1,"Masculino",20000,"Activo"));
+                                dao.insert(new Empleado("041257412365","Genesis Rubi Espinal Leiva",1,1,"Femenino",20000,"Activo"));
+                                dao.insert(new Empleado("0412574000","Kathia Michelle Alvarez Leiva",1,1,"Femenino",20000,"Inactivo"));
+                                dao.insert(new Empleado("04125433765","Eddie Nahum Mejia Leiva",1,1,"Masculino",20000,"Activo"));
+                                dao.insert(new Empleado("147855555","Fernando David Mejia Leiva",1,1,"Masculino",20000,"Inactivo"));
+                                dao.insert(new Empleado("1478555332","Katty Rachel Mejia Leiva",1,1,"Femenino",20000,"Activo"));
+                                dao.insert(new Empleado("547896631","Fernanda Elizabeth Santos Munguia",1,1,"Femenino",20000,"Activo"));
+                                dao.insert(new Empleado("4587965233","Emilio Sandoval",1,1,"Masculino",20000,"Activo"));
+                                dao.insert(new Empleado("5412300558","Ruben Adalberto Castillo Norales",1,1,"Masculino",20000,"Activo"));
+                                dao.insert(new Empleado("5412300547","Luis Enrique Varela Fernandez",1,1,"Masculino",20000,"Inactivo"));
+                                dao.insert(new Empleado("5412300452","Victoria Isabel Santos Munguia",1,1,"Femenino",20000,"Activo"));
                             });
                         }
                     };

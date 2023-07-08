@@ -30,6 +30,10 @@ public class EmpleadoViewModel extends AndroidViewModel {
     public LiveData<List<Empleado>> getDataset() {
         return dataset;
     }
+    public LiveData<List<Empleado>> getDatasetEstado(String estado){
+        LiveData<List<Empleado>> datasetEstado = empleadoRepository.getDatasetEstado(estado);
+        return datasetEstado;
+    }
 
     public void insert(Empleado empleado){
         empleadoRepository.insert(empleado);

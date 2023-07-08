@@ -16,4 +16,43 @@
     <string name="lbl_dni_prueba">145620002369</string>
     <string name="lbl_imagen_eliminar">Boton de eliminar</string>
     <string name="lbl_imagen_empleado">Imagen de un empleado</string>
+    <string name="planilla">Planilla</string>
+    <string name="tool_nuevo_empleado">Crear nuevo empleado</string>
+    <string name="lbl_dni">DNI</string>
+    <string name="lbl_nombre_completo">Nombre completo</string>
+    <string name="tv_departamento" >Departamento</string>
+    <string name="tv_cargo">Cargo</string>
+    <string name="tv_sexo">Sexo</string>
+    <string name="lbl_masculino">Masculino</string>
+    <string name="lbl_femenino">Femenino</string>
+    <string name="lbl_salario">Salario base</string>
+    <string name="lbl_guardar" >Guardar</string>
+    <string name="lbl_btn_nuevo_empleado">Boton para agregar nuevo empleado</string>
+    <string name="lbl_visualizar_estados">Visualizar:</string>
+    <string-array name="departamento_list">
+        <item>Administración</item>
+        <item>Gerencia</item>
+        <item>IT</item>
+        <item>Caja</item>
+        <item>Bodega</item>
+        <item>Limpieza</item>
+        <item>Contabilidad</item>
+        <item>Ventas</item>
+    </string-array>
+
+    <string-array name="cargo_list">
+        <item>Administrador</item>
+        <item>Gerente de area</item>
+        <item>Gerente de venta</item>
+        <item>Desarrollador</item>
+        <item>Cajero</item>
+        <item>Limpieza</item>
+        <item>Contador</item>
+        <item>Vendedor</item>
+    </string-array>
+    <string-array name="ver_estados_list">
+        <item>Todos</item>
+        <item>Solo activos</item>
+        <item>Solo inactivos</item>
+    </string-array>
 </resources>

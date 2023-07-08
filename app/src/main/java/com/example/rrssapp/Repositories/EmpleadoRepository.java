@@ -23,6 +23,10 @@ public class EmpleadoRepository {
     public LiveData<List<Empleado>> getDataset(){
         return this.dataset;
     }
+    public LiveData<List<Empleado>> getDatasetEstado(String estado){
+        LiveData<List<Empleado>> datasetEstado = dao.getEmpleadosEstado(estado);
+        return datasetEstado;
+    }
 
     public void insert(Empleado empleado){
         RHDataBase.databaseWriteExecutor.execute(() -> {
