@@ -28,4 +28,6 @@ public interface EmpleadoDao {
 
     @Query("SELECT * FROM empleado_table ORDER BY empleado_nombre ASC")
     LiveData<List<Empleado>> getEmpleados();
+    @Query("SELECT * FROM empleado_table where empleado_estado = :estado ORDER BY empleado_nombre ASC")
+    LiveData<List<Empleado>> getEmpleadosEstado(String estado);
 }
