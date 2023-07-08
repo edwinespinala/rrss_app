@@ -16,4 +16,6 @@
     <string name="lbl_dni_prueba">145620002369</string>
     <string name="lbl_imagen_eliminar">Boton de eliminar</string>
     <string name="lbl_imagen_empleado">Imagen de un empleado</string>
+    <string name="lbl_imagen_de_un_lupa">Imgagen de lupa</string>
+    <string name="lbl_imagen_de_un_cargo">Imagen de cargo</string>
 </resources>
