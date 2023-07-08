@@ -8,16 +8,19 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
+import com.example.rrssapp.DAO.CargoDao;
 import com.example.rrssapp.DAO.EmpleadoDao;
+import com.example.rrssapp.Entities.Cargo;
 import com.example.rrssapp.Entities.Empleado;
 import com.example.rrssapp.Entities.Empleado;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Database(version = 1, exportSchema = false, entities = {Empleado.class})
+@Database(version = 1, exportSchema = false, entities = {Empleado.class, Cargo.class})
 public abstract class RHDataBase extends RoomDatabase {
     public abstract EmpleadoDao empleadoDao();
+    public abstract CargoDao cargoDao();
 
     private static volatile RHDataBase INSTANCE;
     private static final int NUMBER_OF_THREADS = 4;
