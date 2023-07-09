@@ -56,9 +56,11 @@ public abstract class RHDataBase extends RoomDatabase {
                                 dao.insert(new Empleado("5412300452","Victoria Isabel Santos Munguia",1,1,"Femenino",20000,"Activo"));
 
                                 Cargo nuevo1 =  new Cargo("Jefe Tecnología","es un jefe",8000,1);
-                                Cargo nuevo2 =  new Cargo("Programador Jr","es un Junior",20000,1);
+                                Cargo nuevo2 =  new Cargo("Programador Jr","es un Junior",20000,2);
+                                Cargo nuevo3 =  new Cargo("Tesoreria","es un contador ",20000,4);
                                 cargodao.insert(nuevo1);
                                 cargodao.insert(nuevo2);
+                                cargodao.insert(nuevo3);
                             });
                         }
                     };

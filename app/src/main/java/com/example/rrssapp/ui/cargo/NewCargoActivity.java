@@ -23,7 +23,7 @@ public class NewCargoActivity extends AppCompatActivity {
 
 
     Intent getIntent = new Intent();
-    if(getIntent.hasExtra("action")){
+   /* if(getIntent.hasExtra("action")){
       if (getIntent.getStringExtra("action").equals("update")){
         Cargo car = (Cargo) getIntent.getSerializableExtra("Cargo");
         binding.tilNombreCargo.getEditText().setText(car.getNombreCargo());
@@ -32,7 +32,7 @@ public class NewCargoActivity extends AppCompatActivity {
         binding.spnDepartamentoCargo.setSelection(car.getDepartamento());
         binding.tilSalarioCargo.getEditText().setText(car.getSueldoCargo()+"");
       }
-    }
+    }*/
 
     ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.departamento_list, android.R.layout.simple_spinner_item);
     adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

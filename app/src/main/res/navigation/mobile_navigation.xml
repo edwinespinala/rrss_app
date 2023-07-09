@@ -27,5 +27,8 @@
         android:id="@+id/nav_cargo"
         android:name="com.example.rrssapp.ui.cargo.CargoFragment"
         android:label="Cargo"
-        tools:layout="@layout/fragment_rv_cargos" />
+        tools:layout="@layout/fragment_rv_cargos" >
+
+        <action android:id="@+id/action_cargoFragment_to_creacionFragment" app:destination="@id/nav_creacion"/>
+    </fragment>
 </navigation>

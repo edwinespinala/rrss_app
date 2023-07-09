@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Toast.makeText(this,navController.hashCode(),Toast.LENGTH_SHORT).show();
         binding.appBarMain.fab.setVisibility(View.INVISIBLE);
+
     }
 
     @Override

@@ -32,8 +32,25 @@ public class CargoAdapter extends RecyclerView.Adapter<CargoAdapter.ViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull CargoAdapter.ViewHolder holder, int position) {
         Cargo cargoMostrar = dataset.get(position);
+        int depa = cargoMostrar.getDepartamento();
+        String departamento;
+        switch(depa){
+            case 1:
+                departamento = "Tecnologia";
+                break;
+            case 2:
+                departamento = "Operaciones";
+                break;
+            default:
+                departamento = "";
+        }
+
+
+
+
         holder.binding.tvCargo.setText(cargoMostrar.getNombreCargo());
-        holder.binding.tvDepartamento.setText(cargoMostrar.getDepartamento());
+        //holder.binding.tvDepartamento.setText(cargoMostrar.getDepartamento());
+        holder.binding.tvDepartamento.setText(departamento);
         holder.setOnClickListener(cargoMostrar,manejadorEventoClick);
     }
 
@@ -56,6 +73,11 @@ public class CargoAdapter extends RecyclerView.Adapter<CargoAdapter.ViewHolder> 
 
         public void setOnClickListener(Cargo cargoMostrar, OnItemClickListener<Cargo> listener) {
           this.binding.imgSearch.setOnClickListener(v -> listener.onItemClick(cargoMostrar,"mostrar"));
+
+            binding.cardCargo.setOnClickListener(v ->{
+                manejadorEventoClick.onItemClick(cargoMostrar,"card");
+            });
+
 
         }
     }
