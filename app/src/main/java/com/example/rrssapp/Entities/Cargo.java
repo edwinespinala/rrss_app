@@ -23,13 +23,20 @@ public class Cargo {
     private double sueldoCargo;
     @NonNull
     @ColumnInfo(name = "cargo_departamento")
-    private String departamento;
+    private int departamento;
 
-    public Cargo( @NonNull int idCargo, @NonNull String nombreCargo, @NonNull String descripcionCargo, @NonNull double sueldoCargo, @NonNull String departamento) {
-        this.idCargo = idCargo;
+    public Cargo(@NonNull String nombreCargo, @NonNull String descripcionCargo, double sueldoCargo, int departamento) {
         this.nombreCargo = nombreCargo;
         this.descripcionCargo = descripcionCargo;
         this.sueldoCargo = sueldoCargo;
+        this.departamento = departamento;
+    }
+
+    public int getDepartamento() {
+        return departamento;
+    }
+
+    public void setDepartamento(int departamento) {
         this.departamento = departamento;
     }
 
@@ -71,13 +78,7 @@ public class Cargo {
         this.sueldoCargo = sueldoCargo;
     }
 
-    @NonNull
-    public String getDepartamento() {
-        return departamento;
-    }
 
 
-    public void setDepartamento(@NonNull String departamento) {
-        this.departamento = departamento;
-    }
+
 }

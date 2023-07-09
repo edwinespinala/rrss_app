@@ -37,6 +37,7 @@ public abstract class RHDataBase extends RoomDatabase {
                         public void onCreate(@NonNull SupportSQLiteDatabase db){
                             super.onCreate(db);
                             databaseWriteExecutor.execute(() -> {
+                                CargoDao cargodao = INSTANCE.cargoDao();
                                 EmpleadoDao dao = INSTANCE.empleadoDao();
                                 dao.deleteAll();
 
@@ -53,6 +54,11 @@ public abstract class RHDataBase extends RoomDatabase {
                                 dao.insert(new Empleado("5412300558","Ruben Adalberto Castillo Norales",1,1,"Masculino",20000,"Activo"));
                                 dao.insert(new Empleado("5412300547","Luis Enrique Varela Fernandez",1,1,"Masculino",20000,"Inactivo"));
                                 dao.insert(new Empleado("5412300452","Victoria Isabel Santos Munguia",1,1,"Femenino",20000,"Activo"));
+
+                                Cargo nuevo1 =  new Cargo("Jefe Tecnología","es un jefe",8000,1);
+                                Cargo nuevo2 =  new Cargo("Programador Jr","es un Junior",20000,1);
+                                cargodao.insert(nuevo1);
+                                cargodao.insert(nuevo2);
                             });
                         }
                     };

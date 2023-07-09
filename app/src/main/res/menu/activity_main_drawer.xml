@@ -16,5 +16,9 @@
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/planilla" />
+        <item
+            android:id="@+id/nav_cargo"
+            android:icon="@drawable/baseline_safety_divider_24"
+            android:title="Cargo" />
     </group>
 </menu>

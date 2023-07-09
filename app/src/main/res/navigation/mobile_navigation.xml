@@ -22,4 +22,10 @@
         android:name="com.example.rrssapp.ui.slideshow.SlideshowFragment"
         android:label="@string/planilla"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_cargo"
+        android:name="com.example.rrssapp.ui.cargo.CargoFragment"
+        android:label="Cargo"
+        tools:layout="@layout/fragment_rv_cargos" />
 </navigation>

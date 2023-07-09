@@ -7,11 +7,9 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardCargo"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -24,7 +22,6 @@
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="128dp"
-                android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/lbl_imagen_de_un_cargo"
@@ -58,7 +55,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/imgSearch"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_marginStart="8dp"
