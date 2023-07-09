@@ -18,6 +18,7 @@
     <string name="lbl_imagen_empleado">Imagen de un empleado</string>
     <string name="planilla">Planilla</string>
     <string name="tool_nuevo_empleado">Crear nuevo empleado</string>
+    <string name="tool_nuevo_cargo">Crear nuevo cargo</string>
     <string name="lbl_dni">DNI</string>
     <string name="lbl_nombre_completo">Nombre completo</string>
     <string name="tv_departamento" >Departamento</string>
@@ -29,6 +30,10 @@
     <string name="lbl_guardar" >Guardar</string>
     <string name="lbl_btn_nuevo_empleado">Boton para agregar nuevo empleado</string>
     <string name="lbl_visualizar_estados">Visualizar:</string>
+    <string name="lbl_imagen_de_un_cargo" />
+    <string name="lbl_imagen_de_un_lupa" />
+    <string name="lbl_btn_nuevo_cargo" />
+    <string name="lbl_id" />
     <string-array name="departamento_list">
         <item>Administración</item>
         <item>Gerencia</item>
